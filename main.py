@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-"""Write the entry joke to entry.txt in the output directory.
-
-The output directory is MAKEFUN_OUTPUT_DIR when set and non-empty, otherwise
-/output. It is created if missing. The file content is exactly TEXT followed
-by one trailing newline.
+"""Emit a single canned entry line into entry.txt under the chosen output dir.
+Its produced bytes must remain byte-identical across every run and edit.
 """
 import os
 import sys
